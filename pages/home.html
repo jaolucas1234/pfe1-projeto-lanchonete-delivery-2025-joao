@@ -5,9 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lanchonete Delivery</title>
     <link rel="stylesheet" href="../styles/home.css">
+    <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
-    
+    <header>
+        <h1>Lanchonete Delivery</h1>
+        <nav>
+            <button onclick="window.location.href='./pedidos.html'">Concluídos</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="formulario">
+            <label>Cliente: <input type="text" id="cliente"></label>
+            <label>Endereço: <input type="text" id="endereco"></label>
+            <label>Produto: 
+                <select id="produto">
+                    <option value=""> Selecione um produto </option>
+                </select>
+            </label>
+            <button id="gerarPedido">Gerar Pedido</button>
+        </section>
+
+        <section class="pedidos">
+            <div class="coluna">
+                <h2>Em Execução</h2>
+                <div id="execucao"></div>
+            </div>
+            <div class="coluna">
+                <h2>A Caminho</h2>
+                <div id="entrega"></div>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <h2>Feito por João Lucas Ribeiro Leite</h2>
+    </footer>
+
 </body>
 <script src="../scripts/home.js"></script>
 </html>
